@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    int serverSock = socket(AF_INET, SOCK_STREAM, 0);
+    int serverSock = socket(AF_INET, SOCK_STREAM, 0); // Socket 클래스는 client에서 서버로 접속하거나 Server에서 accept 하는데 필요한 클래스
     if (serverSock == -1) {
         myerror("socket");
     }

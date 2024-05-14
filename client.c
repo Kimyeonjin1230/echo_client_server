@@ -14,7 +14,7 @@ void myerror(const char* msg) {
 
 int main(int argc, char* argv[]) {
     if (argc != 3) {
-        fprintf(stderr, "Usage: %s <server_ip> <server_port>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <ip> <port>\n", argv[0]);
         exit(EXIT_FAILURE);
     }
 
